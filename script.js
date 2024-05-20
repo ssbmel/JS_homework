@@ -15,3 +15,4 @@ function getSquare(number) {
 
 const result = getSquare(5);
 console.log(result); // 25 출력 (5의 제곱)
+
