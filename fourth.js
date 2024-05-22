@@ -72,3 +72,16 @@ const user = {
 
 const {이름, 나이, 주소} = user;
 console.log(user);
+
+localStorage.setItem("user", JSON.stringify(user));
+console.log(JSON.parse(localStorage.getItem("user")));
+
+
+const editData = {
+  ...user,
+  나이 : 30
+}
+localStorage.setItem("user", JSON.stringify(editData));
+
+localStorage.removeItem("user");
+console.log(JSON.parse(localStorage.getItem("user")));
